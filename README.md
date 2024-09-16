@@ -6,6 +6,7 @@ u can pause this script  or close it from task bar
 
 adjust the delay according to computer speed 
 
+tweak it if it doesnt work ......
 needs no python, no extra fuss
 no privacy breach 
 no permissions
