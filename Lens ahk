@@ -1,0 +1,24 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+; Hotkey to trigger the screenshot and Google Lens search
+^!l::  ; Ctrl+Alt+L
+    ; Take a screenshot of a selected area
+    Send, #+s  ; Windows key + Shift + S
+    
+    ; Wait for the user to finish selecting the area
+    KeyWait, LButton, D  ; Wait for left mouse button to be pressed
+    KeyWait, LButton  ; Wait for left mouse button to be released
+    
+    ; Wait a moment for the screenshot to be saved to clipboard
+    Sleep, 1000
+    
+    ; Open Google Lens
+    Run, https://lens.google.com
+       
+   Sleep, 3000
+    ; Paste the content from clipboard
+    Send, ^v
+return
