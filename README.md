@@ -11,3 +11,8 @@ needs no python, no extra fuss
 no privacy breach 
 no permissions
 it works just as if u manually do it
+
+
+
+
+Create a folder named Lib on desktop put the big named ahk file and UIA ahk in same folder , run the big named ahk script and press hotkeys as per the name of the script
